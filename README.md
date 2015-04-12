@@ -3,7 +3,7 @@
 La présentation utilise [reveal.js](https://github.com/hakimel/reveal.js).
 
 ## Utilisation de base
-Aller à http://ldionne.com/.... ou ouvrir index.html avec un navigateur.
+Aller à http://ldionne.github.io/HST-2901 ou ouvrir index.html avec un navigateur.
 
 ## Utilisation avancée
 ```sh
