@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author", content="Louis Dionne">
-    <title>Hana: Expressive metaprogramming</title>
+    <title>Les problèmes de Hilbert</title>
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
     <link rel="stylesheet" href="lib/css/highlight/zenburn.css">
@@ -20,22 +20,203 @@
                      data-notes="^Note:">
             <script type="text/template">
 
+<!-- Définitions MathJax -->
+$\newcommand{card}[1]{\mathrm{card}\left(#1\right)}$
+$\newcommand{powerset}[1]{\mathcal{P}\left(#1\right)}$
+$\newcommand{N}{\mathbb{N}}$
+$\newcommand{R}{\mathbb{R}}$
+
+
 ## Les problèmes de Hilbert
 ### Louis Dionne
 
 ====================
 
 ## Plan
-- ...
+- Contexte historique
+- L'hypothèse du continu
+- La cohérence de l'arithmétique
+- L'hypothèse de Riemann
+
+==============================================================================
+
+## Contexte historique
+
+----
+
+### Paris, 1900
+#### Exposition Universelle
+
+Note:
+- Tenue pour célébrer les réussites du siècle passé et accélérer le
+développement dans le siècle à venir.
+- C.F. Expo 67
+
+----
+
+### Le monde des mathématiques bouillonne
+
+----
+
+### Deuxième congrès international des mathématiciens (ICM)
+
+Note:
+- idée initiée par Georg Cantor et Felix Klein (analyse complexe)
+- organisé par l'Union mathématique internationale
+- a lieu tous les 4 ans
+- dernier congrès: 2014 Séoul
+- y sont remises les médailles Fields (entre autres)
+
+----
+
+Il y avait (!!)
+
+<!-- TODO: Il y avait qui? -->
+
+====================
+
+### David Hilbert présente 10 problèmes non résolus
+
+![](img/Hilbert.jpg)
+
+----
+
+#### Une liste complète de 23 problèmes est publiée peu après:
+
+- théorie des ensembles <!-- .element: class="fragment" data-fragment-index="1" -->
+- géométrie             <!-- .element: class="fragment" data-fragment-index="2" -->
+- analyse complexe      <!-- .element: class="fragment" data-fragment-index="3" -->
+- théorie des nombres   <!-- .element: class="fragment" data-fragment-index="4" -->
+- théorie des groupes   <!-- .element: class="fragment" data-fragment-index="5" -->
+- etc..                 <!-- .element: class="fragment" data-fragment-index="5" -->
+
+====================
+
+### Le but est de stimuler l'avancée des mathématiques
+
+----
+
+### C'est une réussite
+Ces problèmes auront un impact important sur les mathématiques du XX<sup>e</sup> siècle
+
+====================
+
+### Parmi ces problèmes figurent
+
+----
+
+### L'hypothèse du continu
+
+Il n'existe pas de cardinal compris strictement entre celui du dénombrable et celui du continu
+
+
+----
+
+### La cohérence de l'arithmétique
+
+<!-- TODO: Statement rigoureux -->
+
+Note:
+Mène au théorème d'incomplétude de Gödel
+
+----
+
+### La transcendance de $a^b$
+(pour $a$ algébrique et $b$ algébrique irrationnel)
+
+Note:
+- Un nombre algébrique est un nombre qui est racine d'un polynôme non-nul
+  à coefficients rationnels.
+- Un nombre transcendant est un nombre non-algébrique.
+
+----
+
+#### L'hypothèse de Riemann
+#### La conjecture de Goldbach
+#### La conjecture des nombres premiers jumeaux
+
+<!-- TODO: Statements rigoureux -->
+
+==============================================================================
+
+## L'hypothèse du continu
+
+Il n'existe pas de cardinal compris strictement entre celui du dénombrable et celui du continu
+
+----
+
+### Qu'est-ce qu'un cardinal?
+
+C'est un nombre qui représente la grosseur d'un ensemble
+
+----
+
+#### Dans le cas fini, facile!
+$\card{\\{\\}} = 0$ <br>
+$\card{\\{x\\}} = 1$ <br>
+$\card{\\{x, y\\}} = 2$ <br>
+...
+
+----
+
+#### Dans le cas infini, qu'est-ce qu'on fait?
+
+$\card{\N} = \infty ?$ <br> <!-- .element: class="fragment" data-fragment-index="1" -->
+$\card{\R} = \infty + 1 ?$  <!-- .element: class="fragment" data-fragment-index="1" -->
+<br><br>
+### N'y pensez même pas! <!-- .element: class="fragment" data-fragment-index="2" -->
+
+----
+
+On dit que deux ensembles ont la même cardinalité s'il existe une bijection entre les deux
+
+----
+
+"$X$ a la même cardinalité que $Y$" est une relation d'équivalence:
+
+- réflexive ($id : X \to X$ est une bijection)                     <!-- .element: class="fragment" -->
+- symmétrique ($f^{-1} : Y \to X$ est une bijection)               <!-- .element: class="fragment" -->
+- transitive (la composition de deux bijections est une bijection) <!-- .element: class="fragment" -->
+
+----
+
+#### Les cardinaux sont les classes d'équivalence de cette relation
+
+----
+
+#### On dénote par $\aleph_0$ la cardinalité de $\N$
+Le cardinal qui le suit est $\aleph_1$, et ainsi de suite
+
+----
+
+#### Pour un ensemble $X$, on écrit $\card{\powerset{X}} = 2^{\card{X}}$
+
+----
+
+#### Finalement, on sait que $\card{\powerset{\N}} = 2^{\aleph_0} = \card{\R}$
+
+----
+
+#### L'hypothèse du continu devient donc
+
+Est-ce que $\aleph_1 = 2^{\aleph_0}$ ?
+
+----
+
+#### Et puis?
+
+----
+
+### C'est indépendant des axiomes ZFC
+(Gödel, 1938 et Cohen, 1963)
+
+==============================================================================
+
+## La cohérence de l'arithmétique
 
 ====================
 
 # Merci
-
-<span class="fragment fade-in" data-fragment-index="1">
-http://ldionne.com <br>
-http://github.com/ldionne
-</span>
 
             </script>
             </section>
@@ -48,6 +229,7 @@ http://github.com/ldionne
     <script>
         Reveal.initialize({
             slideNumber: true,
+            history: true,
 
             dependencies: [
                 { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
