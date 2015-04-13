@@ -27,9 +27,9 @@
 
 ## Plan
 - Contexte historique
+- Survol des problèmes
 - L'hypothèse du continu
 - La cohérence de l'arithmétique
-- L'hypothèse de Riemann
 
 ==============================================================================
 
@@ -68,12 +68,6 @@ Note:
 - dernier congrès: 2014 Séoul
 - y sont remises les médailles Fields (entre autres)
 
-----
-
-Il y avait (!!)
-
-<!-- TODO: Il y avait qui? -->
-
 ====================
 
 ### David Hilbert présente 10 problèmes non résolus
@@ -98,7 +92,8 @@ Il y avait (!!)
 ----
 
 ### C'est une réussite
-Ces problèmes auront un impact important sur les mathématiques du XX<sup>e</sup> siècle
+Ces problèmes auront un impact important sur les mathématiques
+du XX<sup>e</sup> siècle
 
 ====================
 
@@ -106,23 +101,24 @@ Ces problèmes auront un impact important sur les mathématiques du XX<sup>e</su
 
 ----
 
-### L'hypothèse du continu
+### L'hypothèse du continu (résolu)
 
-Il n'existe pas de cardinal compris strictement entre celui du dénombrable et celui du continu
-
+Il n'existe pas de cardinal compris strictement entre celui du
+dénombrable et celui du continu
 
 ----
 
-### La cohérence de l'arithmétique
+### La cohérence de l'arithmétique (résolu)
 
-<!-- TODO: Statement rigoureux -->
+Peut-on prouver que l'arithmétique est cohérente sans utiliser davantage
+que les axiomes de l'arithmétique?
 
 Note:
 Mène au théorème d'incomplétude de Gödel
 
 ----
 
-### La transcendance de $a^b$
+### La transcendance de $a^b$ (résolu)
 (pour $a$ algébrique et $b$ algébrique irrationnel)
 
 Note:
@@ -132,17 +128,34 @@ Note:
 
 ----
 
-#### L'hypothèse de Riemann
-#### La conjecture de Goldbach
-#### La conjecture des nombres premiers jumeaux
+### L'hypothèse de Riemann (non résolu)
 
-<!-- TODO: Statements rigoureux -->
+La partie réelle de tout zéro non-trivial de la fonction
+$\zeta$ est $\frac{1}{2}$.
+
+----
+
+### La conjecture de Goldbach (non résolu)
+
+Tout entier pair $\geq 2$ peut être exprimé comme la somme de deux premiers.
+
+----
+
+### La conjecture des nombres premiers jumeaux (non résolu)
+
+Existe-t-il une infinité de couples de premiers $(p, p + 2)$?
+
+----
+
+### Un algorithme pour résoudre les équations diophantiennes (résolu)
+
 
 ==============================================================================
 
 ## L'hypothèse du continu
 
-Il n'existe pas de cardinal compris strictement entre celui du dénombrable et celui du continu
+Il n'existe pas de cardinal compris strictement entre celui
+du dénombrable et celui du continu
 
 ----
 
@@ -169,7 +182,8 @@ $\card{\R} = \infty + 1 ?$  <!-- .element: class="fragment" data-fragment-index=
 
 ----
 
-On dit que deux ensembles ont la même cardinalité s'il existe une bijection entre les deux
+On dit que deux ensembles ont la même cardinalité s'il
+existe une bijection entre les deux
 
 ----
 
@@ -186,6 +200,7 @@ On dit que deux ensembles ont la même cardinalité s'il existe une bijection en
 ----
 
 #### On dénote par $\aleph_0$ la cardinalité de $\N$
+
 Le cardinal qui le suit est $\aleph_1$, et ainsi de suite
 
 ----
@@ -214,6 +229,80 @@ Est-ce que $\aleph_1 = 2^{\aleph_0}$ ?
 ==============================================================================
 
 ## La cohérence de l'arithmétique
+
+Peut-on prouver que l'arithmétique est cohérente sans utiliser davantage
+que les axiomes de l'arithmétique?
+
+----
+
+### Kurt Gödel (1906 - 1978)
+#### Logicien talentueux
+
+![](img/Godel.jpg)
+
+#### (et un peu fou) <!-- .element: class="fragment" -->
+
+Note:
+Il avait une phobie d'être empoisonné. Il ne mangeait que la nourriture que
+sa femme lui préparait. En 1977, sa femme est hospitalisée pour 6 mois et
+Gödel meurt de faim.
+
+----
+
+### Le premier théorème d'incomplétude de Gödel (1931)
+Toute théorie récursivement axiomatisable, cohérente et capable de formaliser
+l'arithmétique doit être incomplète.
+
+----
+
+### Théorie récursivement axiomatisable
+Théorie dans laquelle on peut mécaniquement déterminer si un énoncé est
+un axiome.
+
+Note:
+C'est le cas des théories utilisées pour formaliser les
+mathématiques usuelles.
+
+----
+
+### Cohérence d'une théorie
+Il est impossible de dériver une contradiction à partir des
+axiomes de la théorie.
+
+----
+
+### Complétude d'une théorie
+Toute proposition qui peut être exprimée dans la théorie peut être prouvée
+ou réfutée dans celle-ci.
+
+----
+
+### Le deuxième théorème d'incomplétude de Gödel (1931)
+Toute théorie récursivement axiomatisable, cohérente et capable de formaliser
+l'arithmétique est incapable de démontrer sa propre cohérence.
+
+Note:
+Le deuxième théorème d'incomplétude n'est qu'une généralisation
+technique du premier.
+
+----
+
+#### Hilbert devait être déçu!
+
+====================
+
+### Toujours est-il que sur sa tombe on peut lire
+<span class="fragment fade-in" data-fragment-index="1">
+<span class="fragment fade-out" data-fragment-index="2">
+    Wir müssen wissen<br>
+    Wir werden wissen
+</span>
+</span>
+
+<span class="fragment fade-in" data-fragment-index="2">
+    Nous devons savoir<br>
+    Nous saurons
+</span>
 
 ====================
 
